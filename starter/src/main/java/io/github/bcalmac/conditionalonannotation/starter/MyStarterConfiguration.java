@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 public class MyStarterConfiguration {
 
     @Bean
-    @ConditionalOnBean(annotation = MyAnnotation.class)
+    @ConditionalOnBean(annotation = EnableSomething.class)
     @ConditionalOnMissingBean(Integer.class)
     public Integer myBean() {
         return 10;

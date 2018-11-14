@@ -1,12 +1,12 @@
 package io.github.bcalmac.conditionalonannotation.service;
 
-import io.github.bcalmac.conditionalonannotation.starter.MyAnnotation;
+import io.github.bcalmac.conditionalonannotation.starter.EnableSomething;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MyAnnotation
+@EnableSomething
 public class MyApplication {
 
     public static void main(String[] args) {
